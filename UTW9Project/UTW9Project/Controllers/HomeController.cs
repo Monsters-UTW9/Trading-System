@@ -12,7 +12,10 @@ namespace UTW9Project.Controllers
         {
             return View();
         }
-
+        public ActionResult safaa()
+        {
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

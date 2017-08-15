@@ -32,8 +32,7 @@ namespace UTW9Project.Controllers
             return View();
         }
         public ActionResult user()
-        {
-            
+        {   
             return View();
         }
     }

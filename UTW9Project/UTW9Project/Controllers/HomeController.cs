@@ -30,7 +30,7 @@ namespace UTW9Project.Controllers
         public System.Globalization.CultureInfo cultureInfo { get; set; }
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Your application description page amal.";
 
             return View();
         }

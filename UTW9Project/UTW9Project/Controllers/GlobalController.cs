@@ -11,7 +11,7 @@ namespace UTW9Project.Controllers
     public class GlobalController : Controller
     {
         // GET: Global
-        public ActionResult change(string LanguageAbbrevation)
+        public ActionResult changeBiLanguage(string LanguageAbbrevation)
         {
             if (LanguageAbbrevation != null)
             {

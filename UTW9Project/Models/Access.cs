@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class Class1
+    class Access
     {
+        public int Id { get; set; }
+        public string url { get; set; }
+        public bool type_user { get; set; }
     }
 }

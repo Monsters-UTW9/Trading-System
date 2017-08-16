@@ -1,0 +1,48 @@
+﻿/* start option box*/
+.option-box {
+    position: fixed;
+    top: 43%;
+    right: 0;
+    z-index: 99999;
+}
+
+    .option-box .color-option {
+        float: right;
+        color: #fff;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 6px;
+        padding-right:41px;
+        width: 40px;
+        display: none;
+        background-color: #FFF;
+    }
+
+        .option-box .color-option span {
+            color: #000;
+            font-size: 10px;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-align:center;
+        }
+
+        .option-box .color-option ul li {
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            margin-left: 6px;
+            display: block;
+            padding-top: 3px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+    .option-box i {
+        padding: 10px 6px;
+        color: #000;
+        cursor: pointer;
+        background-color: #FFF;
+        position: relative;
+        top: 19px;
+    }
+/* end option box*/

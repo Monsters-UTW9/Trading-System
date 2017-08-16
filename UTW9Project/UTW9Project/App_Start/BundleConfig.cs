@@ -5,27 +5,27 @@ namespace UTW9Project
 {
     public class BundleConfig
     {
-        // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+            bundles.UseCdn = true;
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
+            var jqueryCdnPath = "http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js";
 
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+            bundles.Add(new StyleBundle("~/Content/SharedStyles").Include(
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/SharedStyle.css",
+                      "~/Content/font-awesome.min.css"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/SharedScripts", jqueryCdnPath).Include(
+                      "~/Scripts/jquery.min.js",
+                      "~/Scripts/bootstrap.min.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+            bundles.Add(new ScriptBundle("~/Scripts/DataTables", jqueryCdnPath).Include(
+                      "~/Scripts/dataTables/jquery.dataTables.min.js",
+                      "~/Scripts/dataTables/dataTables.bootstrap.min.js",
+                      "~/Scripts/dataTables/dataTables.keyTable.min.js",
+                      "~/Scripts/UserScript.js"));
+
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿.left_col {
+﻿
+
+.left_col {
     background: #2A3F54
 }
 
@@ -8,6 +10,7 @@
     padding: 0;
     z-index: 9999;
     position: absolute
+
 }
 
     .nav-sm .container.body .col-md-3.left_col.menu_fixed {
@@ -261,7 +264,7 @@
     }
 
 body .container.body .right_col {
-    background: #F7F7F7
+    background: #F7F7F7;
 }
 
 .nav-md .container.body .right_col {
@@ -291,10 +294,10 @@ body .container.body .right_col {
         width: 100%;
         padding-right: 0
     }
-
     .right_col {
-        padding: 10px !important
+        padding: 10px !important;
     }
+
 }
 
 @media (max-width: 1200px) {
@@ -306,12 +309,6 @@ body .container.body .right_col {
     .tile, .graph {
         zoom: 85%;
         height: inherit
-    }
-}
-
-@media (max-width: 1270px) and (min-width: 192px) {
-    .x_title h2 small {
-        display: none
     }
 }
 
@@ -428,11 +425,11 @@ body .container.body .right_col {
 
 body {
     color: #73879C;
-    background: #2A3F54;
+    background: #fff;
     font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
     font-size: 13px;
     font-weight: 400;
-    line-height: 1.471
+    line-height: 1.471;
 }
 
 .main_container .top_nav {
@@ -851,7 +848,7 @@ a {
 footer {
     background: #fff;
     padding: 15px 20px;
-    display: block
+    display: block;
 }
 
 .nav-sm footer {
@@ -1029,10 +1026,9 @@ h2 {
     padding: 10px 17px;
     display: inline-block;
     background: #fff;
+    overflow-x: auto;
     border: 1px solid #E6E9ED;
     -webkit-column-break-inside: avoid;
-    -moz-column-break-inside: avoid;
-    column-break-inside: avoid;
     opacity: 1;
     transition: all .2s ease
 }
@@ -1515,6 +1511,7 @@ table.display tr.even.row_selected td {
 table.display tr.odd.row_selected td {
     background-color: #9FAFD1
 }
+
 
 div.box {
     height: 100px;
@@ -4659,7 +4656,7 @@ ul.notifications {
 
 .table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {
     padding: 5px 7px;
-    text-align: center
+    text-align: center;
 }
 
 .daterangepicker table.table-condensed tbody tr:last-child td {
@@ -5392,3 +5389,4 @@ input::-webkit-inner-spin-button {
 .metadata table {
     margin-left: 400px;
 }
+

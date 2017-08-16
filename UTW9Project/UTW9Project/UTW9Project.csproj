@@ -153,6 +153,7 @@
     <Content Include="Content\dataTables.bootstrap.min.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\MainStyle.css" />
+    <Content Include="Content\SharedStyle.css" />
     <Content Include="Content\UserStyle.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -167,6 +168,7 @@
     <Content Include="Scripts\dataTables\dataTables.bootstrap.min.js" />
     <Content Include="Scripts\dataTables\dataTables.keyTable.min.js" />
     <Content Include="Scripts\dataTables\jquery.dataTables.min.js" />
+    <Content Include="Scripts\echarts.min.js" />
     <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\MainJs.js" />
     <Content Include="Scripts\UserScript.js" />
@@ -214,6 +216,13 @@
       <Name>Models</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_LanguageView.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -228,7 +237,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>59017</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

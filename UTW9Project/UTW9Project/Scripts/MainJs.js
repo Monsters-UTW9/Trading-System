@@ -44,3 +44,27 @@ function readURL(input) {
         reader.readAsDataURL(input.files[0]);
     }
 }
+
+
+/* show color box*/
+
+$('.color-option').fadeToggle();
+$('.fa-icon').click(function () {
+    $('.color-option').fadeToggle();
+});
+//change color on click
+var colorLi = $('.option-box ul li')
+colorLi
+    .eq(0).css("background-color", "#FF0F65").end()
+    .eq(1).css("background-color", "#2549BB");
+// change syle color
+colorLi.click(function () {
+
+    $("link[href*='color']").attr("href", $(this).attr("data-value"));
+});
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip({
+        trigger: 'hover'
+    });
+
+});
